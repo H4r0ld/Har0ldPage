@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Página CV de Harold Martinez" />
+    <meta name="robots" content="frontend, backend, fullstack, cv" />
+    <title>Harold Martinez</title>
+    <meta name="viewport" content="width=device-width, inictial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h2 class="title">CONTACT ME</h2>
+      <nav class="main-nav">
+        <ul class="main-nav-ul">
+          <li class="main-nav-ul__item"><a href="/index.html">HOME</a></li>
+          <li class="main-nav-ul__item"><a href="/projects.html">PROJECTS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <section class="main-section-contactme" id="contactme">
+
+            <form class="main-form-information" action="">
+              <label for="nombre">
+                <span>Nombre</span>
+                <input
+                  type="text"
+                  name="nombre"
+                  id="nombre"
+                  autocomplete="name"
+                  required
+                />
+              </label>
+
+              <label for="correo">
+                <span>Correo</span>
+                <input
+                  type="email"
+                  name="correo"
+                  id="correo"
+                  autocomplete="email"
+                  required
+                />
+              </label>
+              
+              <label for="pais">
+                <span>Pais</span>
+                <input list="pais" />
+                <datalist id="pais">
+                  <option value="Ecuador"></option>
+                  <option value="Mexico"></option>
+                  <option value="Argentina"></option>
+                  <option value="EstadosUnidos"></option>
+                </datalist>
+              </label>
+
+              <label for="telefono">
+                <span>Telefono</span>
+                <input
+                  type="tel"
+                  name="telefono"
+                  id="telefono"
+                  autocomplete="+593 0123456789"
+                  required
+                />
+              </label>
+
+              <label for="mensaje">
+                <span>Mensaje</span>
+                <textarea cols="50" rows="10" name="mensaje" id="mensaje" required></textarea>
+              </label>
+              
+              <input type="submit" value="Enviar formulario" class="enviar"/>
+
+            </form>
+          </section>
+    </main>
+
+    <footer>
+        <img src="IMG/Fto.jpg">
+        <p>&copy Copyright Harold Martinez - 2022</p>
+      </footer>
+    </body>
+  </html>
